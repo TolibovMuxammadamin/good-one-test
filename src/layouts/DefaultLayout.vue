@@ -4,7 +4,7 @@
                          width="30%"
                          right
                          app>
-      <!--  -->
+      <Sidebar />
     </v-navigation-drawer>
 
     <v-app-bar app
@@ -33,9 +33,11 @@
 
 <script>
 import { mapGetters, mapMutations } from 'vuex';
+import Sidebar from "@/components/Sidebar";
 
 export default {
   name: "DefaultLayout",
+  components: {Sidebar},
   data: () => ({
     drawer: null,
   }),
