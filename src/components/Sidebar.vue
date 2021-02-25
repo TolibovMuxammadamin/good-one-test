@@ -85,7 +85,7 @@
           <span>Печать</span>
         </button>
       </div>
-      <div class="d-flex align-center justify-space-around">
+      <div class="sidebar-btns">
         <v-btn large color="error">
           Очистить
         </v-btn>
@@ -243,6 +243,19 @@ export default {
 
     &:focus {
       outline: none;
+    }
+  }
+
+  .sidebar-btns {
+    display: flex;
+    align-items: center;
+
+    button {
+      width: calc((100% - 20px) / 3);
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
     }
   }
 </style>

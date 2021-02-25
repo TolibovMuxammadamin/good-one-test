@@ -1,7 +1,7 @@
 <template>
   <v-app v-resize="onResize" id="inspire">
     <v-navigation-drawer v-model="drawer"
-                         width="30%"
+                         :width="pageInnerWidth < 1264 ? '460px' : '30%'"
                          right
                          app>
       <Sidebar />
