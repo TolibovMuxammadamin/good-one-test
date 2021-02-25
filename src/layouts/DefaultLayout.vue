@@ -24,7 +24,7 @@
       <div class="sub-nav">
         <router-link to="/" class="sub-nav__link">Home</router-link>
         <v-icon color="white">mdi-chevron-right</v-icon>
-        <router-link to="/" class="sub-nav__link">Order</router-link>
+        <router-link to="/order" class="sub-nav__link">Order</router-link>
       </div>
       <router-view />
     </v-main>
